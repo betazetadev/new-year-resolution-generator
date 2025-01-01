@@ -1,0 +1,10 @@
+# Ignorar dependencias de Node.js
+node_modules/
+
+# Archivos de entorno
+.env
+
+# Archivos de Docker
+*.log
+/.idea/vcs.xml
+/.idea/modules.xml

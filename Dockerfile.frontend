@@ -1,0 +1,8 @@
+# Using the official Nginx image
+FROM nginx:alpine
+
+# Copying frontend files to Nginx's default directory
+COPY frontend /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80

@@ -1,0 +1,21 @@
+# Using the official Node.js image
+FROM node:18
+
+# Create the application directory
+WORKDIR /usr/src/app
+
+# Copy the necessary files
+COPY backend/package*.json ./
+COPY backend/server.js ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the .env file
+COPY backend/.env .env
+
+# Expose the port
+EXPOSE 3000
+
+# Command to start the application
+CMD ["npm", "start"]
